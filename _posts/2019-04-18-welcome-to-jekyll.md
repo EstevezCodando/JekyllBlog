@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Jekyll!"
+title: "Criando meu Blog com Jekyll"
 date: 2019-04-18T15:34:30-04:00
 categories:
   - blog
@@ -8,6 +8,8 @@ tags:
   - update
 ---
 
+Neste ano senti uma necessidade grande de organizar em um blog minhas atividades, e ter um local para escrever testes e ferramentas aprendidas, eu já havia levantando um blog em Jekyll anteriormente e lembrava que era algo tranquilo, em algum carnaval Enzzo havia me falado sobre o Jekyll e levantamos junto em poucas horas.
+Fazendo sozinho não foi tão simples 
 You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
