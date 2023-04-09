@@ -1,8 +1,8 @@
 ---
-title: "Criando Blog Jekyll no Windows Pt-1"
+title: "Criando Blog Jekyll no Windows Pt1"
 date: 2023-04-08T15:34:30-04:00
 categories:
-  - documentação
+  - documentacao
 tags:
   - blog
   - configuração
@@ -10,11 +10,14 @@ tags:
   - Jekyll
   - update
   - tutorial
+  - instalação
+  - MinimalMistakes
 ---
+
 Neste ano, senti necessidade de organizar as coisas que estou aprendendo e fazendo em um blog.  
 Já havia criado um blog com Jekyll anteriormente e me lembrava de que era um processo tranquilo e rápido. Certa vez, durante um carnaval, SouEnzzo me apresentou ao Jekyll e, juntos, configuramos um blog em apenas algumas horas no Linux.  
 Fazer isso em Windows sozinho não foi tão simples devido aos multiplos caminhos e configuração que são necessarias, dependendo de como esteja seu sistema Windows, pode ser algo simples ou trabalhoso.  
-Aqui vou deixar um resumo de como configurar o sistema Windows e na Parte 2 vou falar um pouco do tema Minimal Mistakes, que escolhi devido à presença da busca global e outras funcionalidades refinadas que já estão pré-configuradas, o que facilita as coisas  
+Aqui vou deixar um resumo de como configurar o sistema Windows e na Parte 2 vou falar um pouco do Minimal Mistakes tema que escolhi devido à presença da busca global e outras funcionalidades refinadas que já estão pré-configuradas, o que facilita as coisas  
 
 ## Instalação
 Ambiente de trabalho:
@@ -79,7 +82,7 @@ Ao termino do processo serão criados os seguintes arquivos:
   - index.md  
 
 Vou tratar um pouco sobre eles na parte 2.
-{% assign post_link = site.posts | where: "path", "_posts/2023-04-08-Criando-Blog-Jekyll-no-Windows-Pt2.md" | first %}
+{% assign post_link = site.posts | where: "path", "_posts/2023-04-08-Criando-Blog-Jekyll-no-Windows-Pt2" | first %}
 [Continuar lendo - Parte 2]({{ post_link.url | relative_url }})
 
 

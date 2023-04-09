@@ -1,11 +1,12 @@
 # Este é meu Blog pessoal utilizando Jekyll Minimal Mistakes
-https://estevezcodando.github.io/
+https://estevezcodando.github.io/  
+
 A organização deste blog inclui:
 
    - Barra de navegação
    - Barra lateral com informações do autor
    - Pesquisa abrangente no site
-   - Categorias para agrupar os temas
+   - categories para agrupar os temas
    - Tags do Jekyll para classificar os assuntos
 
 Neste blog, planejo compartilhar conhecimentos e aletoriedades nas areas de ciências, tecnologia, programação, cartografia e temas variados;

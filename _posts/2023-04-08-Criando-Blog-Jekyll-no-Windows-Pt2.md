@@ -1,8 +1,8 @@
 ---
-title: "Criando Blog Jekyll no Windows Pt-2"
-date: 2023-04-09T15:34:30-04:00
+title: "Criando Blog Jekyll no Windows Pt2"
+date: 2023-04-08T16:34:30-04:00
 categories:
-  - documentação
+  - documentacao
 tags:
   - blog
   - configuração
@@ -11,78 +11,40 @@ tags:
   - update
   - tutorial
 ---
-Neste ano, senti necessidade de organizar as coisas que estou aprendendo e fazendo em um blog.  
-Já havia criado um blog com Jekyll anteriormente e me lembrava de que era um processo tranquilo e rápido. Certa vez, durante um carnaval, SouEnzzo me apresentou ao Jekyll e, juntos, configuramos um blog em apenas algumas horas no Linux.  
-Fazer isso em Windows sozinho não foi tão simples devido aos multiplos caminhos e configuração que são necessarias, dependendo de como esteja seu sistema Windows, pode ser algo simples ou trabalhoso.  
-Aqui vou deixar um resumo de como configurar o sistema Windows e na Parte 2 vou falar um pouco do tema Minimal Mistakes, que escolhi devido à presença da busca global e outras funcionalidades refinadas que já estão pré-configuradas, o que facilita as coisas  
 
-## Instalação
-Ambiente de trabalho:
- - Sistema Operacional: Windows 10
-
-#### Instalação Ruby
-
- O Jekyll é baseado em Ruby, portanto, é necessário instalá-lo para que funcione adequadamente. Faça o download através do link [Ruby][Ruby-Devkit]. Eu utilizei o Ruby+Devkit 3.2.2.1(x64). Durante a instalação, lembre-se de marcar a opção "Add Ruby Executables to your PATH".
-
-Após a instalação, verifique se foi bem-sucedida, abrindo o cmd e executando o seguinte comando:
+Ao executar o comando
   ```powershell
- C:\> ruby -v
+ C:\> jekyll new nome-do-blog
 ```
-O retorno deve ser algo parecido com isso:
-
+o bundler realizou as instalação de todas as dependencias que serão utilizadas.
+O blog inicial é gerado com base no tema **minima**, para observar onde a gem está instalada e o que tem nela podemos executar:
   ```powershell
-ruby 3.2.2 (2023-03-30) [x64-mingw-ucrt]
-```
-Caso isso não ocorra, configure corretamente as variáveis de ambiente do Windows. Vá em Path nas variáveis do sistema e configure o caminho onde foi instalado o Ruby e adicione um path do Ruby/bin.
+ C:\> bundle show minima
+```  
 
-![Clique duas vezes em Path e configure o caminho do Ruby/Bin]({{ site.url }}{{ site.baseurl }}/assets/images/configpath1.jpg){: .align-center}
+Com isso veremos o caminho em que a gem contendo o tema do blog está localizada, permitindo-nos configurar o layout e outros aspectos do blog.
+- _includes
+- _layouts
+- _sass
+- assets
 
-Deve ficar da seguinte forma:
+Ao copiar esses arquivos para a pasta do blog, podemos personalizá-los de acordo com nossas necessidades:
 
-![Configurando Path do Ruby]({{ site.url }}{{ site.baseurl }}/assets/images/configpath2.jpg){: .align-center}
+- **_includes**  
+  Os arquivos "_includes" são partes/pedaços do blog que podem ser chamados e replicados em todas as páginas. Esses arquivos incluem elementos como cabeçalho, rodapé, entre outros.
 
-Finalize a configuração adicionando a variável 'RUBYOPT' com o valor '-Eutf-8'.
+- **_layouts**  
+  Os "_layouts" definem as estruturas básicas das páginas do blog, determinando como elas são organizadas visualmente.
 
-![Adicione uma variável de nome RUBYOPT com valor -Eutf-8]({{ site.url }}{{ site.baseurl }}/assets/images/configpath3.jpg){: .align-center}
+- **_sass**  
+  A pasta "_sass" contém os arquivos de estilo do blog. Ao executar o comando `jekyll build`, os arquivos SASS são automaticamente convertidos em arquivos CSS.
 
-#### Instalação Jekyll Gem
-
-A partir de agora, podemos utilizar as Gems do Ruby. O próprio Jekyll vem na forma de uma Ruby Gem, sendo um pacote de fácil instalação. Para isso, abra o cmd e execute o seguinte comando:
-
-  ```powershell
-C:\> gem install jekyll
-```
-Pressione Enter e aguarde todas as instalações. Isso pode demorar um pouco, portanto, certifique-se de manter a conexão com a internet durante o processo.
-
-Ao finalizar a instalação execute 
-  ```powershell
-C:\> jekyll -v
-```
-O retorno deve ser algo parecido com isso:
-
-  ```powershell
-jekyll 4.3.2
-```
-
-Com isso, o sistema está pronto para executar o blog em Jekyll.
-Escolha a pasta onde deseja armazenar seu blog, abra o prompt de comando (cmd) e execute:
-
-  ```powershell
-C:\blog\> jekyll new Nome-Do-Seu-blog
-```
-Ao termino do processo serão criados os seguintes arquivos:
-  - Gemfile
-  - Gemfile.lock
-  - _config.yml
-  - _posts
-  - about.md
-  - index.md  
-
-Vou tratar um pouco sobre eles na Parte 2 para que a postagem não fique tão extensa.
+- **assets**  
+  A pasta "assets" armazena os arquivos de estilo e CSS que podem ser modificados para alterar a aparência do blog.
 
 
 
-[Parte2]:
+
 [minimalmistakes]: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide
 [githubMinmalCreate]: https://github.com/mmistakes/mm-github-pages-starter/generate
 [Ruby-Devkit]: https://rubyinstaller.org/downloads/ 
