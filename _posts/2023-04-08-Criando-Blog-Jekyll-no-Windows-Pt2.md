@@ -1,17 +1,23 @@
 ---
-title: "Criando meu Blog com Jekyll"
-date: 2023-04-08T15:34:30-04:00
+title: "Criando Blog Jekyll no Windows Pt-2"
+date: 2023-04-09T15:34:30-04:00
 categories:
-  - blog
+  - documentação
 tags:
+  - blog
+  - configuração
+  - windows
   - Jekyll
   - update
+  - tutorial
 ---
-
-Neste ano, senti uma grande necessidade de organizar minhas atividades em um blog e ter um espaço para compartilhar testes e ferramentas aprendidas. Já havia criado um blog com Jekyll anteriormente e me lembrava de que era um processo tranquilo e rápido. Certa vez, durante um carnaval, meu amigo Enzzo me apresentou ao Jekyll e, juntos, configuramos um blog em apenas algumas horas no Linux.  
-Fazer isso em Windows sozinho não foi tão simples devido aos multiplos caminhos e configuração que são necessarias, dependendo de como esteja seu sistema Windows, pode ser algo trabalhoso. Optei pelo tema Minimal Mistakes devido à presença da barra de navegação e busca global e outras funcionalidades refinadas que já estão pré-configuradas, o que facilita bastante a vida.  
+Neste ano, senti necessidade de organizar as coisas que estou aprendendo e fazendo em um blog.  
+Já havia criado um blog com Jekyll anteriormente e me lembrava de que era um processo tranquilo e rápido. Certa vez, durante um carnaval, SouEnzzo me apresentou ao Jekyll e, juntos, configuramos um blog em apenas algumas horas no Linux.  
+Fazer isso em Windows sozinho não foi tão simples devido aos multiplos caminhos e configuração que são necessarias, dependendo de como esteja seu sistema Windows, pode ser algo simples ou trabalhoso.  
+Aqui vou deixar um resumo de como configurar o sistema Windows e na Parte 2 vou falar um pouco do tema Minimal Mistakes, que escolhi devido à presença da busca global e outras funcionalidades refinadas que já estão pré-configuradas, o que facilita as coisas  
 
 ## Instalação
+Ambiente de trabalho:
  - Sistema Operacional: Windows 10
 
 #### Instalação Ruby
@@ -20,7 +26,7 @@ Fazer isso em Windows sozinho não foi tão simples devido aos multiplos caminho
 
 Após a instalação, verifique se foi bem-sucedida, abrindo o cmd e executando o seguinte comando:
   ```powershell
-ruby -v
+ C:\> ruby -v
 ```
 O retorno deve ser algo parecido com isso:
 
@@ -44,13 +50,13 @@ Finalize a configuração adicionando a variável 'RUBYOPT' com o valor '-Eutf-8
 A partir de agora, podemos utilizar as Gems do Ruby. O próprio Jekyll vem na forma de uma Ruby Gem, sendo um pacote de fácil instalação. Para isso, abra o cmd e execute o seguinte comando:
 
   ```powershell
-gem install jekyll
+C:\> gem install jekyll
 ```
 Pressione Enter e aguarde todas as instalações. Isso pode demorar um pouco, portanto, certifique-se de manter a conexão com a internet durante o processo.
 
 Ao finalizar a instalação execute 
   ```powershell
-jekyll -v
+C:\> jekyll -v
 ```
 O retorno deve ser algo parecido com isso:
 
@@ -58,13 +64,13 @@ O retorno deve ser algo parecido com isso:
 jekyll 4.3.2
 ```
 
-Com isso, o sistema está pronto para executar um blog em Jekyll.
+Com isso, o sistema está pronto para executar o blog em Jekyll.
 Escolha a pasta onde deseja armazenar seu blog, abra o prompt de comando (cmd) e execute:
 
   ```powershell
-jekyll new Nome-Do-Seu-blog
+C:\blog\> jekyll new Nome-Do-Seu-blog
 ```
-Ele vem com os seguintes arquivos:
+Ao termino do processo serão criados os seguintes arquivos:
   - Gemfile
   - Gemfile.lock
   - _config.yml
@@ -72,35 +78,11 @@ Ele vem com os seguintes arquivos:
   - about.md
   - index.md  
 
-O arquivo *Gemfile* é onde fica armazenado todas as gems utilizadas na pagina, que pode ser entendido como extensões e plugins utilizadas. Exemplo, para o funcionamento eu utilizo o wdm para verificar as alterações em tempo real *gem "wdm"*, e para busca estou utilizando o plugin *gem "jekyll-algolia"*.   
-  
-
-Ao iniciar o blog com *new* o Jekyll inicia com o thema Minima, e rodando o comando:
-
-  ```powershell
-gem show minima
-```
-é possivel ver o caminho dos arquivos de layout utilizados para o blog criado.
-é possivel copiar os arquivos para pasta do blog e configurar eles individualmente.
-apos realizar as configurações desejadas basta rodar:
-  ```powershell
-bundle exec jekyll s 
-```
-para iniciar o server Jekyll, no meu caso eu optei por outro thema e realizei a hospedagem pelo githubpages
-
-#### Criando em Minimal Mistakes
-
-Agora que todo o sistema está em funcionamento é possivel escolher um diferente com algumas configurações já predefinidas, e hospedar no githubpages.
-utilizando o seguinte link: 
-[Exemplo Minimal Mistakes][githubMinmalCreate]
-E aqui tem todas as informações necessarias para [configurar o Minimal Mistakes] [minimalmistakes]
+Vou tratar um pouco sobre eles na Parte 2 para que a postagem não fique tão extensa.
 
 
 
-
-Você pode olhar a documentação do Jekyll em [Jekyll docs][jekyll-docs]
-
-
+[Parte2]:
 [minimalmistakes]: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide
 [githubMinmalCreate]: https://github.com/mmistakes/mm-github-pages-starter/generate
 [Ruby-Devkit]: https://rubyinstaller.org/downloads/ 
