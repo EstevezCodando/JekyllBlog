@@ -1,23 +1,14 @@
-# Este é meu Blog pessoal utilizando o Minimal Mistakes
+# Este é meu Blog pessoal utilizando Jekyll Minimal Mistakes
 
-Você pode encontrar mais informações :[**sobre este template aqui**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+A organização deste blog inclui:
 
-Contains basic configuration to get you a site with:
+   - Barra de navegação
+   - Barra lateral com informações do autor
+   - Pesquisa abrangente no site
+   - Categorias para agrupar os temas
+   - Tags do Jekyll para classificar os assuntos
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
-
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
-
----
-
+Neste blog, planejo compartilhar conhecimentos e aletoriedades nas areas de ciências, tecnologia, programação, cartografia e temas variados;
 ## Troubleshooting
 
 If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
@@ -25,3 +16,6 @@ If you have a question about using Jekyll, start a discussion on the [Jekyll For
 - [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
 - [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
 - [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+
+Você pode encontrar mais informações [**sobre este template aqui**](https://github.com/mmistakes/mm-github-pages-starter/generate) e todas as informações sobre ele aqui [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+
