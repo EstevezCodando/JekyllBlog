@@ -1,8 +1,7 @@
 locale: "pt-BR"
 title: EstevezCodando
 email: estevezcodando@gmail.com
-description: >-
-  Bem-vindo ao Estevez Codando, um espaço dedicado ao compartilhamento de conhecimentos.
+description: "Bem-vindo ao Estevez Codando, um espaço dedicado ao compartilhamento de conhecimentos diversos."
 twitter_username: estevezcodando
 github_username: estevezcodando
 minimal_mistakes_skin: default
@@ -11,6 +10,7 @@ search: true
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "dark"
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show

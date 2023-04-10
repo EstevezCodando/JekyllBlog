@@ -7,3 +7,5 @@ main:
     url: /tags/
   - title: "Sobre"
     url: /sobre/
+  - title: "Termos"
+    url: /termos/
