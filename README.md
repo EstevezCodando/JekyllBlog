@@ -1,5 +1,5 @@
 # Este é meu Blog pessoal utilizando Jekyll Minimal Mistakes
-https://estevezcodando.github.io/  
+[https://blog.afect.com.br/  ](https://blog.afect.com.br/)
 
 A organização deste blog inclui:
 
